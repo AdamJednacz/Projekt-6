@@ -1,0 +1,82 @@
+@import "settings/all";
+
+
+.container {
+  max-width: 200px;
+  margin: 0 auto;
+  width: 100%;
+  @include desktop {
+    max-width: 1352px;
+  }
+}
+.line{
+  content: "";
+  width: 4em;
+  height: 0.5em;
+  background-color: $line-color;
+  margin: 1em;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.boldertext{
+  font-weight: bolder;
+}
+.home_page_banner {
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: $font;
+  background-color: $main-background-color;
+  color: $main-font-color;
+
+  h1 {
+    font-size: 48px;
+    padding-top: 2em;
+
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    padding: 2em;
+    font-size: 24px;
+  }
+}
+
+main {
+  .content {
+    font-family: $font;
+    text-align: center;
+    h1 {
+      font-size: 36px;
+      color: $content-font-color;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 0.5em;
+
+    }
+    h2{
+      font-weight: bolder;
+      margin-bottom: 1em;
+    }
+    ul{
+      font-size: 12px;
+      margin-bottom: 1em;
+      li{
+        margin-bottom: 1em;
+        list-style: inside ;
+      }
+    }
+
+  }
+}
+
